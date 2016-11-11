@@ -1,0 +1,18 @@
+<div id ="create_Appointment" class=partial ng-init=ac.logCheck()>
+	<div id="top">
+		<h1>New Appointment</h1>
+	</div>	
+	<div class="box">
+		<label>Date<input type="date" ng-model=ac.newAppointment.date min={{ac.minDate}}></label>
+
+		<label>Time <input type="time" ng-model= "ac.newAppointment.time" placeholder="HH:mm:ss"  [min="08:00:00"] [max="17:00:00"] required ></label>
+
+		<label>Complain<textarea ng-model=ac.newAppointment.complain></textarea></label>
+		
+		<label><input type="submit" value='Create Appointment' ng-click=ac.createAppointment() class="btn">
+		<a href="#/appointments"><input type="submit" value='Cancel' class="btn"></a></label>
+	</div>
+</div>
+<div id="errors" ng-repeat='error in ac.appointmentsCreateError track by $index'>
+	<p>{{error}}<p>
+</div>

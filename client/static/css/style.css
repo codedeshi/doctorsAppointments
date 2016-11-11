@@ -1,0 +1,124 @@
+* {
+  font-family: Calibri;
+  margin: 0;
+  padding: 0;
+}
+.table {
+    margin-top: 20px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:lightgray;
+    color: black;
+}
+#search td{
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: steelblue;
+}
+#search input {
+  width: 100%;
+  padding: 5px;
+}
+
+#create_poll input {
+  float: right;
+  border: 1px solid grey;
+  width : 300px;
+}
+input {
+  border-radius: 5px;
+}
+#container {
+  width: 1200px;
+  margin: auto;
+  line-height: 500px;
+}
+#wrap {
+  width: 50%;
+  margin: auto;
+
+}
+#wrap * {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 1em;
+}
+.btn {
+  color: white;
+  background-color: seagreen;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.partial {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+#top {
+  margin-top: 25px;
+}
+#top a {
+  float: right;
+}
+#top h1 {
+  display: inline-block;
+}
+
+
+.box {
+  margin: 20px 0;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;  
+}
+label {
+  display: block;
+  margin: 10px 10px;
+  padding: 10px 0;
+  
+}
+input , textarea {
+  float: right;    
+  border-radius: 5px;
+  width: 200px;
+  font-size: 1em;
+}
+
+form input[type=submit] {
+  width: 200px;
+  border-radius: 5px;
+  border: none;  
+  color: white;
+  font-size: 1em;
+  margin: 20px;
+  padding: 10px 0;
+}
+
+.user {
+  float: none;
+}

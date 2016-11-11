@@ -1,0 +1,31 @@
+
+<div class="partial" ng-init=ac.getAppointments()>
+	<div id="top">
+		<h1>Welcome {{ac.cu.user}}. Doctors Appointments </h1>
+		<a href="" ng-click=ac.logout()>Logout</a>
+	</div>
+	<div id="table">
+		<table class='table'>
+			<tr id="search">
+				<td></td> 
+				<td></td>
+				<td></td>
+				<td><input type="text" placeholder ='Search by user' ng-model="filter_name.addedBy"></td>
+			</tr>
+			<tr>
+				<th>Date</th>
+				<th>Time</th>
+				<th>Paitent Name</th>
+				<th>Complaint</th>
+			</tr>
+							
+			<tr ng-repeat='apt in ac.apts | filter : filter_name track by $index' >
+				<td>{{apt.date | date: 'MMMM dd yyyy'}}</td> 
+				<td>{{apt.time | date: 'hh:mm a'}}</td>
+				<td>{{apt.addedBy}}</td>
+				<td>{{apt.complain}}<a href='' ng-click ="ac.destroy(apt._id)" ng-if="ac.cu.user==apt.addedBy">Cancel</a></td>
+			</tr>
+		</table>
+	</div>
+	<a href="#/newAppointment"><input class='btn' type="submit" value="Add New Appointment"></a>
+</div>
