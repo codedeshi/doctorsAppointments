@@ -46,8 +46,7 @@ input {
 }
 #container {
   width: 1200px;
-  margin: auto;
-  line-height: 500px;
+  margin: 10vh auto;
 }
 #wrap {
   width: 50%;

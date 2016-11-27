@@ -12,6 +12,6 @@ app.use(express.static(path.join(__dirname + '/bower_components')));
 
 require('./server/config/routes.js')(app);
 
-app.listen(5000, function(){
-	console.log('listening on port 5000');
+app.listen(3003, function(){
+	console.log('listening on port 3003');
 })
